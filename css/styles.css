@@ -1,0 +1,121 @@
+
+    @font-face {
+      font-family:"DMSans";
+      font-weight:400 500; 
+      src: url('../assets/fonts/DMSans-VariableFont_opsz,wght.ttf');
+    }
+
+    @font-face {
+      font-family:"DMSans";
+      font-style: italic;
+      font-weight:400 500; 
+      src: url('../assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf');
+    }
+
+    :root {
+        --purple-light: hsl(254, 88%, 90%);
+        --purple-dark:  hsl(256, 67%, 59%);
+        --yellow-light: hsl(31, 66%, 93%);
+        --yellow-dark: hsl(39, 100%, 71%);
+        --white: hsl(0, 0%, 100%);
+        --off-white: hsl(0, 0%, 96%);
+        --black: hsl(0, 0%, 7%);
+
+        --font-size-reg: 1.125rem;
+        --font-size-m: 2.25rem;
+        --font-size-l: 3rem;
+        --font-size-xl: 4rem;
+    }
+
+.container {
+    font-family: "DMSans", sans-serif;
+    line-height: 1.5;
+
+    margin: 32px;
+    color: var(--black);
+    font-size: var(--font-size-reg);
+    background: var(--off-white);
+
+    display: grid;
+    gap: 30px; /* Space between grid items */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    align-content:center; /* Align grid content to the top */
+    justify-content: center; /* Center the grid horizontally if there's extra space */
+    box-sizing: border-box; /* Include padding in element's total width/height */
+    background-color: #f0eff4;        
+    }
+
+        .container > div {
+        padding: 25px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items:center; /* Align content to the start (left) by default */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+        overflow: hidden; /* Hide overflowing content if any */
+        color: #333; /* Default text color */
+        border-radius: 12px;
+        }
+
+    #div_1 { 
+        background-color: hsl(256, 67%, 59%);
+        color: var(--white);
+        text-align: center; 
+        justify-content: center; 
+    }
+
+    h1 {
+        padding: 32px;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    h2 {
+        padding: 32px;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    #div_2 { 
+        background-color: white;
+    }
+
+    #div_3 { 
+        background-color: hsl(39, 100%, 71%);
+    }
+
+    #div_4 {
+        background-color: hsl(254, 88%, 90%);
+    }
+
+    #div_5 { 
+        background-color: hsl(256, 67%, 59%);
+    }
+
+    #div_6 { 
+        background-color: white;
+    }
+
+    #div_7 { 
+        background-color: hsl(31, 66%, 93%);
+    }
+
+    #div_8 {
+        background-color: hsl(39, 100%, 71%);
+    }
+
+    /* Style for the attribution div to prevent it from becoming a square */
+    .attribution {
+      grid-column: 1 / -1; /* Make the attribution div span all columns */
+      width: auto; /* Override the fixed width */
+      height: auto; /* Override the fixed height */
+      background-color: transparent; /* Remove background */
+      border: none; /* Remove border */
+      display: block; /* Revert to default display */
+      margin-top: 20px; /* Add some space above it */
+    }
