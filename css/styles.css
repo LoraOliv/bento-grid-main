@@ -92,11 +92,12 @@ body {
         font-size: var(--font-size-s);
         padding: 0px;
         font-weight: 600;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 
     img {
         max-width: 100%;
+        background-color: transparent;
     }
 
     span{
@@ -118,7 +119,7 @@ body {
 
     #div_2 { 
         text-align: left;
-        padding: top 10px;;
+        padding: top 10px;
         background-color: var(--white);
     }
 
@@ -156,28 +157,87 @@ body {
         background-color: hsl(256, 67%, 59%);
         color: var(--white);
         text-align: center;
-        line-height: 2.5rem;
+    }
+
+    #div_5 > :first-child {
+        max-width: 80%;
+    }
+
+    #div_5 > :last-child {
+        font-size: var(--font-size-m);
+        line-height: 2.3rem;
+        font-weight: 500;
+        margin: 30px 30px 0px 30px;
     }
 
     #div_6 { 
         background-color: white;
+        align-items: flex-start;
     }
+
+    #div_6 > :first-child {
+        font-size: var(--font-size-xl);
+        margin-bottom: 0px;
+    }
+
+     #div_6 > :nth-child(2) {
+        margin-top: 0px;
+    }
+
+    #div_6 > :last-child {
+        max-width: 75%;
+    }
+
 
     #div_7 { 
         background-color: hsl(31, 66%, 93%);
+        padding:30px;
+        align-items: flex-start;
+        
+    }
+
+    #div_7 > :first-child {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 2.1rem;
+        margin-top: 0px;
+    }
+
+    #span_2 {
+        color: var(--purple-dark);
+    }
+
+    #div_7 > :last-child {
+        max-width: 65%;
     }
 
     #div_8 {
+        font-size: var(--font-size-m);
         background-color: hsl(39, 100%, 71%);
+        align-items: flex-start;
     }
 
-    /* Style for the attribution div to prevent it from becoming a square */
-    .attribution {
-      grid-column: 1 / -1; /* Make the attribution div span all columns */
-      width: auto; /* Override the fixed width */
-      height: auto; /* Override the fixed height */
-      background-color: transparent; /* Remove background */
-      border: none; /* Remove border */
-      display: block; /* Revert to default display */
-      margin-top: 20px; /* Add some space above it */
+    #div_8 > :first-child {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 2.1rem;
+        margin-top: 0px;
     }
+
+    #div_8 > :last-child {
+        max-width: 80%;
+    }
+
+    .attribution {
+        font-family: "DMSans";
+         margin: 20px 70px 20px 70px; 
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+     .attribution > a {
+        text-decoration: none;
+        color:var(--purple-dark);
+        font-weight: 600;
+     }
