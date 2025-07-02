@@ -41,7 +41,7 @@ body {
 .container {
     font-family: "DMSans", sans-serif;
     margin: 30px 15px 30px 15px;
-    max-inline-size: 1000px;
+    max-inline-size: 1200px;
     background-color: var(--gray);
     display: grid;
     gap: 30px;
@@ -54,34 +54,30 @@ body {
     'six'
     'seven'
     'eight';
-
     min-height: 100vh; 
-    justify-content: center;
-    box-sizing: border-box;    
     }
 
-    @media (width > 960px) {
+    @media (min-width: 960px){
         .container {
+            display: grid;
+             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-areas: 
             "seven one one four"
             "seven two three four"
             "eight two three four"
             "eight six five five";
-
+            margin: 30px auto;
         }
         }
 
         .container > div {
         padding: 25px; 
-        display: flex;
-        flex-direction: column;
-        align-items:center;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         overflow: hidden; 
         border-radius: 12px;
         }
 
-    #div_1 { 
+    .container> :nth-child(1) { 
         background-color: hsl(256, 67%, 59%);
         padding: 45px;
         color: var(--white);
@@ -89,7 +85,7 @@ body {
         line-height: 2.5rem; 
         grid-area: one;
     }
-        #div_1 > :nth-child(2) {
+    .container > :nth-child(1) > :nth-child(2) {
             max-width: 70%;
          } 
 
@@ -127,90 +123,99 @@ body {
         font-weight: 600;
     }
 
-    #div_2 { 
+    .container> :nth-child(2) { 
         text-align: left;
         padding: top 10px;
         background-color: var(--white);
         grid-area: two;
     }
 
-        #div_2 > :first-child{
+        .container> :nth-child(2)> :first-child{
             filter: drop-shadow(0 0 1rem hsl(0 0% 0% / .25));
             border-radius: 100vm;
         }
 
-    #div_3 { 
+    .container> :nth-child(3) { 
         padding: 0px 20px 0 20px;
         align-items:flex-start;
         background-color: hsl(39, 100%, 71%);  
         grid-area: three;
     }
-        #div_3 > :first-child{
+        .container> :nth-child(3) > :first-child{
             max-width: 80%;
         }
     
-        #div_3 > :last-child {
+        .container> :nth-child(3) > :last-child {
             max-width: 70%;
             margin-bottom: -20px;
             overflow: hidden;
          }
     
-    #div_4 {
+    .container> :nth-child(4) {
         background-color: hsl(254, 88%, 90%);
         padding-top: 10px;
         align-items: center;
         grid-area: four;
     }
-        #div_4 > :last-child {
+        .container> :nth-child(4) > :last-child {
             text-align: center;
             font-size: var(--font-size-reg);
             font-weight: 500;
             padding: 26px 26px 10px 26px;
         }
 
-    #div_5 { 
+    .container> :nth-child(5) { 
         background-color: hsl(256, 67%, 59%);
         color: var(--white);
         text-align: center;
         grid-area: five;
-    }
-        #div_5 > :first-child {
+            
+        }
+
+           @media (min-width: 960px) {
+        .container> :nth-child(5) {
+           display:flex;
+           justify-content: baseline;
+        }
+        }
+
+        .container> :nth-child(5) > :first-child {
         max-width: 80%;
         }
 
-        #div_5 > :last-child {
+        .container> :nth-child(5) > :last-child {
         font-size: var(--font-size-m);
         line-height: 2.3rem;
         font-weight: 500;
         margin: 30px 30px 0px 30px;
         }
 
-    #div_6 { 
+    .container> :nth-child(6) { 
         background-color: white;
         align-items: flex-start;
         grid-area: six;
     }
-        #div_6 > :first-child {
+        .container> :nth-child(6) > :first-child {
         font-size: var(--font-size-xl);
         margin-bottom: 0px;
         }
 
-        #div_6 > :nth-child(2) {
+        .container> :nth-child(6) > :nth-child(2) {
         margin-top: 0px;
         }
 
-        #div_6 > :last-child {
+        .container> :nth-child(6) > :last-child {
         max-width: 75%;
         }
 
 
-    #div_7 { 
+    .container> :nth-child(7) { 
         background-color: hsl(31, 66%, 93%);
         padding:30px;
         align-items: flex-start; 
         grid-area: seven;
     }
-        #div_7 > :first-child {
+        .container> :nth-child(7) > :first-child {
         font-size: 2.2rem;
         font-weight: 600;
         line-height: 2.1rem;
@@ -221,24 +226,24 @@ body {
         color: var(--purple-dark);
         }
 
-        #div_7 > :last-child {
+        .container> :nth-child(7) > :last-child {
         max-width: 65%;
         }
 
-    #div_8 {
+    .container> :nth-child(8) {
         font-size: var(--font-size-m);
         background-color: hsl(39, 100%, 71%);
         align-items: flex-start;
         grid-area: eight;
     }
-        #div_8 > :first-child {
+        .container> :nth-child(8) > :first-child {
         font-size: 2.2rem;
         font-weight: 600;
         line-height: 2.1rem;
         margin-top: 0px;
         }
 
-        #div_8 > :last-child {
+        .container> :nth-child(8) > :last-child {
         max-width: 80%;
         }
 
