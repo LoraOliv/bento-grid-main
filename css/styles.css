@@ -95,6 +95,7 @@ body {
             "eight two three four"
             "eight six five five";
             margin: 82px auto 65px auto;
+            min-height: 65vh;
         }
         }
 
@@ -122,6 +123,7 @@ body {
                 .container> :nth-child(1) > :first-child {
                     font-size: var(--font-size-xl);
                     line-height: 3.5rem;
+                    margin-top: 20px;
                 }
 
                 .container> :nth-child(1) > :nth-child(2) {
@@ -146,6 +148,15 @@ body {
                 filter: drop-shadow(0 0 1rem hsl(0 0% 0% / .25));
                 border-radius: 100vm;
             }
+
+            @media (min-width: 960px) {
+            .container> :nth-child(2)> :first-child{
+                max-width: 150%;
+            }
+            .container> :nth-child(2)> :last-child{
+                font-size: var(--font-size-m);
+                margin: 15px 0px 0px 0px;
+            }}
     
     /*Box 3: Maintain...*/
     .container> :nth-child(3) { 
@@ -163,6 +174,17 @@ body {
                 margin-bottom: -20px;
                 overflow: hidden;
             }
+
+            @media (min-width: 960px) {
+            .container> :nth-child(3)> :first-child{
+                font-size: var(--font-size-m);
+                margin-bottom: 25px;
+            }
+             .container> :nth-child(3)> :last-child{
+                max-width: 100%;
+                margin-bottom: -100px;
+
+            }}
     
     /*Box 4: Schedule...*/
     .container> :nth-child(4) {
@@ -180,7 +202,7 @@ body {
 
             @media (min-width: 960px) {
             .container> :nth-child(4) {
-                padding: auto;
+                padding: 20px 30px 20px 35px;
             }
             .container> :nth-child(4) >:first-child {
                 font-size: var(--font-size-m);
@@ -192,8 +214,8 @@ body {
             .container> :nth-child(4) >:last-child {
                 text-align: start;
                 padding: 0%;
-            }
-            }
+                margin: 20px 10px 30px 0px;
+            }}
 
     /*Box 5: Grow...*/
     .container> :nth-child(5) { 
@@ -203,13 +225,6 @@ body {
         grid-area: five;
             
         }
-
-            @media (min-width: 960px) {
-            .container> :nth-child(5) {
-            display:flex;
-            justify-content: baseline;
-            }}
-
             .container> :nth-child(5) > :first-child {
             max-width: 80%;
             }
@@ -220,6 +235,20 @@ body {
             font-weight: 500;
             margin: 30px 30px 0px 30px;
             }
+
+            @media (min-width: 960px) {
+            .container> :nth-child(5) {
+                display:flex;
+                justify-content: baseline;
+            }
+            .container> :nth-child(5)>:last-child {
+                font-size: 2.45rem;
+                margin: auto 0px auto 15px;
+                text-align: left;
+            }
+            .container> :nth-child(5)>:first-child {
+                max-width: 50%;
+            }}
 
     /*Box 6: 56%...*/
     .container> :nth-child(6) { 
@@ -240,6 +269,15 @@ body {
             max-width: 75%;
             }
 
+            @media (min-width: 960px) {
+            .container> :nth-child(6)>:nth-child(2) {
+                font-size: var(--font-size-reg);
+                margin-bottom: 30px;
+            }
+            .container> :nth-child(6)>:last-child {
+                max-width: 80%;
+            }}
+
     /*Box 7: Create...*/
     .container> :nth-child(7) { 
         background-color: hsl(31, 66%, 93%);
@@ -247,7 +285,7 @@ body {
         grid-area: seven;
     }
             .container> :nth-child(7) > :first-child {
-            font-size: 2.2rem;
+            font-size: var(--font-size-m);
             font-weight: 600;
             line-height: 2.1rem;
             margin-top: 0px;
@@ -277,15 +315,23 @@ body {
         grid-area: eight;
     }
             .container> :nth-child(8) > :first-child {
-            font-size: 2.2rem;
+            font-size: var(--font-size-m);
             font-weight: 600;
             line-height: 2.1rem;
-            margin-top: 0px;
+            margin: 0px 20px 20px 0px;
             }
 
             .container> :nth-child(8) > :last-child {
             max-width: 80%;
             }
+
+             @media (min-width: 960px){
+            .container> :nth-child(8)> :first-child{
+                margin-bottom: 50px;
+            }
+            .container> :nth-child(8)> :last-child{
+                max-width: 105%;
+            }}
 
     /*Footer*/
     .attribution {
