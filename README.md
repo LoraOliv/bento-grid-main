@@ -4,27 +4,22 @@ This project is the result of a Frontend Mentor Challenge I completed as part of
 
 It's a landing page website for a fictional company called Easy Bank.
 
-You can see the final result [here](https://loraoliv.github.io/easybank-landing-page/).
+You can see the final result [here]().
 
 ## Built With
 
 * HTML
-* SASS (SCSS)
-* Basic JavaScript
+* CSS
 
 ## Screenshots
 
 ### Desktop Version:
 
-![desktop-design](https://github.com/user-attachments/assets/cdd67b3a-b70c-4380-b823-d1c24684d891)
-
-![active-states](https://github.com/user-attachments/assets/1bdb6382-ebe3-45cd-8c55-cf5ed54b8d2e)
+![desktop-design](https://github.com/user-attachments/assets/56b2c29a-85b3-48c5-be37-1e7eb0d49a34)
 
 ### Mobile Version:
 
-![_C__Users_student_Desktop_Frontend_easybank_tutorial_index html(iPhone XR)](https://github.com/user-attachments/assets/b88d14a8-a383-4e34-a8da-c0eceab4b31b)
-
-![mobile-navigation](https://github.com/user-attachments/assets/2e142f1b-3719-46d3-ab9f-5b7c06a0cceb)
+![mobile-design](https://github.com/user-attachments/assets/10897d13-264a-47ce-b366-7a4446f30b1a)
 
 ## How to Run Locally 
 
